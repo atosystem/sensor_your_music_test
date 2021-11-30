@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sensor your music</title>
+    <style>
+      #demo-div {color: lightgrey; border-radius: 0.3rem;}
+      #demo-div span, #demo-div #num-observed-events {color: black;}
+      h1 {margin-top: 0.5rem;}
+      h4 {margin-top: 0.66rem; font-size:1.33rem;}
+      #demo-div li {line-height: 21px;}
+      #demo-div ul {margin-bottom: 0.66rem;}
+      html, body {margin: 0; height: 100%; overflow: hidden}
+    </style>
+<script type="module" crossorigin src="/assets/index.61f8a2b5.js"></script>
+  <link rel="modulepreload" href="/assets/vendor.519c7c38.js">
+  <link rel="stylesheet" href="/assets/index.53d3e83e.css">
+</head>
+  <body >
+
+    <div class="container">
+
+      <div class="p-3 mb-2 bg-secondary" id="demo-div">
+      
+      <div id="div_connect_status">Not connected</div>
+      
+      
+      <div id="sensors_ui">
+        <a id="start_demo" class="btn btn-lg btn-success py-1" href="#" role="button">Start sensor</a>
+        <p >Num. of datapoints: <span class="badge badge-warning" id="num-observed-events">0</span></p>
+        
+        <h5>Accelerometer including gravity</h5>
+      
+        <ul>
+          <li>X-axis: <span id="Accelerometer_gx">0</span><span> m/s<sup>2</sup></span></li>
+          <li>Y-axis: <span id="Accelerometer_gy">0</span><span> m/s<sup>2</sup></span></li>
+          <li>Z-axis: <span id="Accelerometer_gz">0</span><span> m/s<sup>2</sup></span></li>
+        </ul>
+        <h5>Accelerometer</h5>
+      <ul>
+        <li>X-axis: <span id="Accelerometer_x">0</span><span> m/s<sup>2</sup></span></li>
+        <li>Y-axis: <span id="Accelerometer_y">0</span><span> m/s<sup>2</sup></span></li>
+        <li>Z-axis: <span id="Accelerometer_z">0</span><span> m/s<sup>2</sup></span></li>
+        <li>Data Interval: <span id="Accelerometer_i">0</span><span> ms</span></li>
+      </ul>
+        
+      <h5>Gyroscope</h5>
+      <ul>
+        <li>X-axis: <span id="Gyroscope_x">0</span><span>&deg;/s</span></li>
+        <li>Y-axis: <span id="Gyroscope_y">0</span><span>&deg;/s</span></li>
+        <li>Z-axis: <span id="Gyroscope_z">0</span><span>&deg;/s</span></li>
+      </ul>
+        
+        <h5 style="margin-top:0.75rem;">Orientation</h5>
+      <ul>
+        <li>Z-axis (&alpha;): <span id="Orientation_a">0</span><span>&deg;</span></li>
+        <li>X-axis (&beta;): <span id="Orientation_b">0</span><span>&deg;</span></li>
+        <li>Y-axis (&gamma;): <span id="Orientation_g">0</span><span>&deg;</span></li>
+      </ul>
+      
+      
+      
+     
+      
+     
+    </div>
+      
+      <h5>Start Server!</h5>
+      <button id="callButton" >Create Call (offer)</button>
+
+    <h5>Join a Call</h5>
+    <input id="callInput" />
+    <button id="answerButton" >Answer</button>
+    <h5>Send text</h5>
+    <input id="txt_send"/>
+    <button id="btn_send">Send</button>
+    
+      
+      </div>
+    </div>
+
+  <div style="display: none;">
+    <h2>1. Start your Webcam</h2>
+
+    <button id="webcamButton">Start webcam</button>
+    <h2>Send text</h2>
+    
+   
+
+    <h2>4. Hangup</h2>
+
+    <button id="hangupButton" >Hangup</button>
+
+  </div>
+
+
+
+  </body>
+
+</html>

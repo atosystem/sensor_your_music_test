@@ -23,7 +23,8 @@
 4. 打開瀏覽器 [http://localhost:3006/](http://localhost:3006/)
 
     ![](https://i.imgur.com/NPxKDOU.png)
-
+    
+    如果要多人使用請留意 `udp port` ，記得要和pd裡面對上，而且一個udp port只能有一個分頁使用它
     按下 `Create Call(offer)` 來建立連線，之後會出現qrcode
 
     ![](https://i.imgur.com/sakJcsC.png)
@@ -54,8 +55,6 @@
 * 如果連線斷掉，請把筆電的網頁重新整理，然後重 第4步開始
 
 * 筆電上開一個網頁，就只能和一個裝置配對
-
-* 目前尚未支援多個裝置，多個裝置的訊息會雜在一起
 
 * 此專案是透過webrtc技術，裝置和電腦不局限於內網內，但兩者之間連線頻寬越好，效果越好
 
